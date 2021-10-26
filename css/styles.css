@@ -6,7 +6,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #201515;
+  background-color: black;
   position: relative;
 }
 
@@ -47,7 +47,7 @@ a {
   height: 1000px;
   margin-bottom: -400px;
   padding: 0;
-  background-color: #201515;
+  background-color: black;
   background-size: cover, auto;
   background-attachment: fixed;
   background-position: center center;
