@@ -1,0 +1,151 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #201515;
+  position: relative;
+}
+
+body:after {
+  content: "";
+  background: url(http://www.transparenttextures.com/patterns/dust.png) repeat
+    center center;
+  opacity: 0.07;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+}
+header {
+  font-size: 3.5vh;
+  color: white;
+  margin-top: 20vh;
+  margin-left: 10vh;
+  position: absolute;
+}
+.footer {
+  float: right;
+  margin-top: 40vh;
+  margin-right: 10vh;
+}
+a {
+  font-size: 3.5vh;
+  color: red;
+  float: right;
+}
+
+.angle {
+  cursor: pointer;
+  width: 100%;
+  height: 1000px;
+  margin-bottom: -400px;
+  padding: 0;
+  background-color: #201515;
+  background-size: cover, auto;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-clip-path: polygon(
+    50% 25%,
+    100% 0%,
+    100% 50%,
+    50% 75%,
+    0% 100%,
+    0% 50%
+  );
+  clip-path: polygon(50% 25%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 50%);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+
+.angle.first {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 0%,
+    100% 50%,
+    50% 75%,
+    0% 100%,
+    0% 0%
+  );
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 0%);
+}
+
+.angle.last {
+  -webkit-clip-path: polygon(
+    50% 25%,
+    100% 0%,
+    100% 100%,
+    50% 100%,
+    0% 100%,
+    0% 50%
+  );
+  clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+
+.arrow {
+  -webkit-clip-path: polygon(
+    50% 25%,
+    100% 50%,
+    100% 100%,
+    50% 75%,
+    0% 100%,
+    0% 50%
+  );
+  clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0% 100%, 0% 50%);
+}
+
+.arrow.first {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 0%,
+    100% 100%,
+    50% 75%,
+    0% 100%,
+    0% 0%
+  );
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%, 0% 0%);
+}
+
+.arrow.last {
+  -webkit-clip-path: polygon(
+    50% 25%,
+    100% 50%,
+    100% 100%,
+    50% 100%,
+    0% 100%,
+    0% 50%
+  );
+  clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+
+.one {
+  background-image: url(../images/hubble01.jpg);
+}
+
+.two {
+  background-image: url(../images/hubble02.jpg);
+}
+
+.three {
+  background-image: url(../images/hubble03.jpg);
+}
+
+.four {
+  background-image: url(../images/hubble04.jpg);
+}
+
+.five {
+  background-image: url(../images/hubble05.jpg);
+}
+
+.six {
+  background-image: url(../images/hubble06.jpg);
+}
+/*# sourceMappingURL=styles.css.map */
